@@ -1,28 +1,28 @@
-# anime7-mcp-tools
+   # anime7-mcp-tools
 
-Un assistant MCP (Model Context Protocol) pour les administrateurs de l'application mobile Anime Seven. Cet outil facilite la gestion des animes et des épisodes sur la page Facebook officielle de l'application.
+   Un assistant MCP (Model Context Protocol) pour les administrateurs de l'application mobile Anime Seven. Cet outil facilite la gestion des animes et des épisodes sur la base de données de l'application mobile.
 
-## Fonctionnalités
+   ## Fonctionnalités
 
-- **Gestion d'anime** : Recherche, publication et mise à jour d'animes via l'API Facebook
-- **Gestion d'épisodes** : Ajout et organisation des épisodes sous forme de commentaires
-- **Traduction** : Traduction automatique des descriptions et titres d'animes
-- **Guides pratiques** : Instructions détaillées pour les différentes tâches d'administration
+   * **Gestion d'anime** : Recherche, publication et mise à jour d'animes dans la base de données
+   * **Gestion d'épisodes** : Ajout et organisation des épisodes avec liens de streaming
+   * **Traduction** : Traduction automatique des descriptions et titres d'animes
+   * **Guides pratiques** : Instructions détaillées pour les différentes tâches d'administration
 
-## Configuration requise
+   ## Configuration requise
 
-- Node.js v18 ou supérieur
-- Un compte Facebook avec accès à la page d'Anime Seven
-- Un token d'accès Facebook avec les permissions appropriées
-- Une clé API Gemini pour les fonctionnalités de traduction
+   * Node.js v18 ou supérieur
+   * Un compte administrateur pour l'application Anime Seven
+   * Une API key pour accéder à la base de données
+   * Une clé API Gemini pour les fonctionnalités de traduction
 
-## Installation
+   ## Installation
 
-1. Clonez ce dépôt :
-```bash
-git clone https://github.com/anime-seven/admin-assistant.git
-cd admin-assistant
-```
+   1. Clonez ce dépôt :
+   ```bash
+   git clone https://github.com/RadouaneElarfaoui/anime7-mcp-tools.git
+   cd anime7-mcp-tools
+   ```
 
 2. Installez les dépendances :
 ```bash
@@ -137,7 +137,7 @@ Voici comment utiliser l'assistant dans une conversation Cline Chat :
 
 1. **Demander de revoir le processus d'ajout d'anime** :
    ```
-   Bonjour, peux-tu m'expliquer comment ajouter un nouvel anime sur notre page Facebook?
+   Bonjour, peux-tu voir comment ajouter un nouvel anime sur notre page Facebook?
    ```
    L'assistant répondra :
    ```

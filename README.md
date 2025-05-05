@@ -60,21 +60,21 @@ npm run dev
 Pour configurer le projet `anime7-mcp-tools` dans Cline AI, ajoutez la section suivante à votre fichier de configuration :
 
 ```json
-"anime7-mcp-tools": {
-  "autoApprove": [],
-  "disabled": false,
-  "timeout": 60,
-  "command": "node",
-  "args": [
-    "chemin/vers/votre/projet/build/index.js"
-  ],
-  "env": {
-    "FACEBOOK_ACCESS_TOKEN": "VOTRE_TOKEN_FACEBOOK",
-    "FACEBOOK_PAGE_ID": "VOTRE_ID_PAGE_FACEBOOK",
-    "GEMINI_API_KEY": "VOTRE_CLE_API_GEMINI"
-  },
-  "transportType": "stdio"
-}
+    "mcpServers": {
+        "anime7-mcp-tools": {
+            "command": "node",
+        "args": [
+          "chemin/vers/votre/projet/build/index.js"
+        ],
+        "env": {
+          "FACEBOOK_ACCESS_TOKEN": "VOTRE_TOKEN_FACEBOOK",
+          "FACEBOOK_PAGE_ID": "VOTRE_ID_PAGE_FACEBOOK",
+          "GEMINI_API_KEY": "VOTRE_CLE_API_GEMINI"
+        },
+            "alwaysAllow": [],
+            "disabled": false
+        }
+    }
 ```
 
 ## Configuration pour Cursor AI
@@ -137,22 +137,15 @@ Voici comment utiliser l'assistant dans une conversation Cline Chat :
 
 1. **Demander de revoir le processus d'ajout d'anime** :
    ```
-   Bonjour, peux-tu m'expliquer comment ajouter un nouvel anime sur notre page Facebook?
-   ```
-   L'assistant répondra :
-   ```
-   Bonjour! Je vais vous guider dans le processus d'ajout d'un anime. Voici d'abord une vue d'ensemble du processus :
+   Bonjour, peux-tu m'expliquer en détail comment ajouter un nouvel anime sur notre page Facebook ?
+   Merci de me présenter :
+   - une vue globale du processus,
+   - les étapes détaillées,
+   - des conseils pratiques,
+   - et un exemple complet,
 
-   getAddAnimeProcessOverview {}
-
-   [Vue d'ensemble du processus s'affiche ici]
-
-   Si vous voulez des instructions plus détaillées, je peux vous fournir :
-   - Des étapes détaillées avec getAddAnimeDetailedSteps
-   - Des conseils pratiques avec getAddAnimePracticalTips
-   - Un exemple complet avec getAddAnimeComprehensiveExample
-
-   Souhaitez-vous voir l'une de ces ressources ou préférez-vous commencer directement par l'ajout d'un anime?
+   en utilisant chacun des outils guide disponibles (`guideAnimeVueGlobale`, `guideAnimeEtapesDetaillees`, `guideAnimeConseilsPratiques`, `guideAnimeExempleComplet`).
+   Je souhaite avoir une vision claire et complète, étape par étape, pour ne rien oublier.
    ```
 
 2. **Recherche d'un anime** :

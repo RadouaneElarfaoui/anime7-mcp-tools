@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+import 'dotenv/config';
+
 /**
  * anime7-mcp-tools
  * 

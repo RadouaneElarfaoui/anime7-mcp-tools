@@ -16,8 +16,8 @@ const emptyInputSchema = {
 };
 
 // Outils pour remplacer les ressources d'add_anime_guide
-export const addAnimeProcessOverviewTool = {
-  name: "getAddAnimeProcessOverview",
+export const guideAnimeVueGlobale = {
+  name: "guideAnimeVueGlobale",
   description: "Obtenir une vue d'ensemble du processus d'ajout d'anime",
   inputSchema: emptyInputSchema,
   handler: async () => {
@@ -27,8 +27,8 @@ export const addAnimeProcessOverviewTool = {
   },
 };
 
-export const addAnimeDetailedStepsTool = {
-  name: "getAddAnimeDetailedSteps",
+export const guideAnimeEtapesDetaillees = {
+  name: "guideAnimeEtapesDetaillees",
   description: "Obtenir les étapes détaillées pour l'ajout d'anime",
   inputSchema: emptyInputSchema,
   handler: async () => {
@@ -38,8 +38,8 @@ export const addAnimeDetailedStepsTool = {
   },
 };
 
-export const addAnimePracticalTipsTool = {
-  name: "getAddAnimePracticalTips",
+export const guideAnimeConseilsPratiques = {
+  name: "guideAnimeConseilsPratiques",
   description: "Obtenir des conseils pratiques pour l'ajout d'anime",
   inputSchema: emptyInputSchema,
   handler: async () => {
@@ -49,8 +49,8 @@ export const addAnimePracticalTipsTool = {
   },
 };
 
-export const addAnimeComprehensiveExampleTool = {
-  name: "getAddAnimeComprehensiveExample",
+export const guideAnimeExempleComplet = {
+  name: "guideAnimeExempleComplet",
   description: "Obtenir un exemple complet d'ajout d'anime et d'épisodes",
   inputSchema: emptyInputSchema,
   handler: async () => {
@@ -62,8 +62,8 @@ export const addAnimeComprehensiveExampleTool = {
 
 // Nous exportons tous les outils dans un tableau
 export const resourceTools = [
-  addAnimeProcessOverviewTool,
-  addAnimeDetailedStepsTool,
-  addAnimePracticalTipsTool,
-  addAnimeComprehensiveExampleTool,
+  guideAnimeVueGlobale,
+  guideAnimeEtapesDetaillees,
+  guideAnimeConseilsPratiques,
+  guideAnimeExempleComplet,
 ]; 
